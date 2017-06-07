@@ -7,12 +7,10 @@
 <div id="square">
 
 </div>
-	  <div class="content-container">
-    <div class="inner-square">
-    </div>
-<div class="content-container">
-    <div class="inner-square">
-    </div>
+	  <div class="leftwindow"></div>
+<div class="rightwindow"></div>
+<div class="door"></div>
+
 <style>
 #square {
 	width: 100px;
@@ -26,33 +24,31 @@
 	border-right: 50px solid transparent;
 	border-bottom: 75px solid pink;
 }
-	.content-container {
-    max-width: 25px;
-    height: auto;
-    border-top: 25px solid #e81354;
-    background: #ffffff;
-    display: block;
+
+.leftwindow {
+  width: 25px;
+  height: 25px;
+  background: grey;
+  position: fixed;
+  top: 90px;
+  left: 25px;
+}
+.rightwindow {
+  width: 25px;
+  height: 25px;
+  background: grey;
+  position: fixed;
+  top: 90px;
+  left: 65px;
 }
 
-.inner-square {
-    background: #cccccc;
-    width: 50%;
-    height: 50%;
-    margin: 5px;
-}
-.content-container {
-    max-width: 25px;
-    height: auto;
-    border-top: 25px solid #e81354;
-    background: #ffffff;
-    display: block;
-}
-
-.inner-square {
-    background: #cccccc;
-    width: 50%;
-    height: 50%;
-    margin: 5px;
+.door {
+  width: 25px;
+  height: 50px;
+  background: white;
+  position: fixed;
+  top: 133px;
+  left: 45px;
 }
 </style>
 </head>
