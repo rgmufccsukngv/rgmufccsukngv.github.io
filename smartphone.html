@@ -3,108 +3,172 @@
   <head>
     <style>
   .rectangle {
-	width: 200px;
-	height: 300px;
-	background: black;
+  width: 200px;
+  height: 300px;
+  background: black;
   -moz-border-radius: 40px;
-	-webkit-border-radius: 40px;
-	border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
   position: fixed;
   top: 10px;
   left: 10px;
 }
+
 .rectangle2 {
-	width: 180px;
-	height: 280px;
-	background: white;
+  width: 180px;
+  height: 280px;
+  background: white;
   -moz-border-radius: 40px;
-	-webkit-border-radius: 40px;
-	border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
   position: fixed;
   top: 20px;
   left: 20px;
 }
+
 .rectangle3 {
-	width: 150px;
-	height: 200px;
-	background: black;
+  width: 150px;
+  height: 200px;
+  background: black;
   position: fixed;
   top: 50px;
   left: 35px;
 }
+
 .rectangle4 {
-	width: 135px;
-	height: 185px;
-	background: linear-gradient(blue, purple);
+  width: 135px;
+  height: 185px;
+  background: linear-gradient(blue, purple);
   position: fixed;
   top: 58px;
   left: 43px;
 }
+
 .circle {
-	width: 45px;
-	height: 45px;
-	background: black;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  background: black;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
   position: fixed;
   top: 253px;
   left: 90px;
 }
+
 .circle2 {
-	width: 35px;
-	height: 35px;
-	background: white;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  background: white;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
   position: fixed;
   top: 258px;
   left: 95px;
 }
+
 .circle3 {
-	width: 50px;
-	height: 10px;
-	background: black;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+  width: 50px;
+  height: 10px;
+  background: black;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
   position: fixed;
   top: 30px;
   left: 85px;
 }
+
 .square {
-	width: 35px;
-	height: 35px;
-	background: white;
+  width: 35px;
+  height: 35px;
+  background: white;
   -moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   position: fixed;
   top: 205px;
-  left: 135px;
+  left: 133px;
 }
+
 .square2 {
-	width: 35px;
-	height: 35px;
-	background: white;
+  width: 35px;
+  height: 35px;
+  background: lawngreen;
   -moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   position: fixed;
   top: 205px;
-  left: 95px;
+  left: 93px;
+  font-size: 15px;
+  font-color: white;
 }
+
 .square3 {
-	width: 35px;
-	height: 35px;
-	background: white;
+  width: 35px;
+  height: 35px;
+  background: white;
   -moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   position: fixed;
   top: 205px;
-  left: 55px;
+  left: 53px;
+  font-size: 12px;
+}
+
+.circle4 {
+  width: 25px;
+  height: 25px;
+  background: aqua;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: fixed;
+  top: 210px;
+  left: 138px;
+}
+.magnifying-glass {
+ font-size: 55px;
+ display: inline-block;
+ width: 5px;
+ height: 5px;
+ border: 5px solid red;
+ position: fixed;
+ border-radius: 70px;
+ top: 213px;
+ left: 140px;
+}
+.magnifying-glass::before {
+ content: "";
+ display: inline-block;
+ position: fixed;
+ right: 580px;
+ bottom: 185px;
+ border-width: 0;
+ background: red;
+ width: 10px;
+ height: 3px;
+ -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+}
+p {
+  color: white;
+  font-size: 50px;
+  position: fixed;
+  top: 20px;
+  left: 65px;
+}
+p2 {
+  color: white;
+  font-size: 16px;
+  position: fixed
+  top: 100px;
+  left: 45px;
 }
     </style>
   </head>
@@ -112,12 +176,30 @@
 <div class="rectangle"></div>
 <div class="rectangle2"></div>
 <div class="rectangle3"></div>
-<div class="rectangle4"></div>
+<div class="rectangle4">
+  <p>
+  9:03
+  </p>
+  <p2>
+    Wednesday, June 14
+  </p2>
+</div>
 <div class="circle"></div>
 <div class="circle2"></div>
 <div class="circle3"></div>
 <div class="square"></div>
-<div class="square2"></div>
-<div class="square3"></div>
+<div class="square2">
+  <p3>
+  Call
+  </p3>
+</div>
+<div class="square3">
+  <p4>
+  Photos
+  </p4>
+</div>
+<div class="circle4"></div>
+<div class="magnifying-glass"></div>
+<div class="magnifying-glass::before"></div>
 </body>
   </html>
